@@ -25,8 +25,8 @@ print ("eloquent installé".'<br>');
 $db->addConnection([
     'driver' => 'mysql',
     'host' => 'root',
-    'database' => 'wish',
-    'username' => 'wish',
+    'database' => 'gamepedia',
+    'username' => 'root',
     'password' => 'root',
     'charset' => 'utf8',
     'collation' => 'utf8_unicode_ci',
