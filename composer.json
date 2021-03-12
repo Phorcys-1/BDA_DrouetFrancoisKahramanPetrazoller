@@ -7,8 +7,8 @@
 
 	"autoload":{
 		"psr-4": {
-			"conf\\":"conf/",
-			"gamepedia\\" : "./GamePedia"
+			"conf\\":"./gamepedia/conf/conf.ini.dist",
+			"gamepedia\\" : "./gamepedia"
 		}
 	}
 }
