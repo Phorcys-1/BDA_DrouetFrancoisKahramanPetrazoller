@@ -38,8 +38,21 @@ print ("connécté a la base".'<br>');
 Eloquent::start(__DIR__.'/gamepedia/conf/conf.ini.dist');
 
 $g = new Game();
+$c = new \gamepedia\Company();
+$p = new \gamepedia\Platform();
 
-var_dump($g->mario());
+/** séace 1 */
+//q1
+//var_dump($g->mario());
+//q2
+//echo "Compagnies japonaises : </br> ".$c->japon();
+//q3
+//echo "Platforme vendus plus de 10 000 000 de fois : </br> ".$p->baseInstalle();
+//q4
+echo "442 jeux a partir du 21173".$g->quatrequatredeux();
+//q5
+//echo($g->JeuxPaginer());
+
 
 
 echo 'Fin fichier';
