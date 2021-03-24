@@ -52,7 +52,7 @@ $res = new \gamepedia\models\Character();
 
 /** séance 1 */
 //q1
-//var_dump($g->mario());
+var_dump($g->mario());
 //q2
 //echo "Compagnies japonaises : </br> ".$c->japon();
 //q3
@@ -69,20 +69,32 @@ $res = new \gamepedia\models\Character();
 //echo $ch->printCharacters($g2c->selectCharacter(12342));
 
 //q3
-echo "Jeux de Sony : </br>";
-echo $gd->printGames($c->selectByName("Sony"));
+//echo "Jeux de Sony : </br>";
+//echo $gd->printGames($c->selectByName("Sony"));
 
 
 
 
-echo 'Fin fichier <br> </br>';
+
 
 //q2
-echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
+//echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
+/*
 foreach ($gameid->getIdByMario() as $value)
     echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
 echo '<br></br>Fin de la requête... <br></br>';
+*/
+//q9
+var_dump( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+$superGenre = new \gamepedia\models\Genre();
+$superGenre->name = "Super Genre";
+$superGenre->deck = "Ces jeux sont vraiment trop bien";
+$superGenre->save();
 
+var_dump( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+
+
+echo 'Fin fichier <br> </br>';
 
 
 
