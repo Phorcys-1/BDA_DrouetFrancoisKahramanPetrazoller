@@ -10,7 +10,7 @@
 
 require_once __DIR__ . '/vendor/autoload.php';
 use  Illuminate\Database\Capsule\Manager as DB;
-use gamepedia\Game as Game;
+use gamepedia\models\Game as Game;
 use gamepedia\database\Eloquent as Eloquent;
 
 
@@ -38,8 +38,9 @@ print ("connécté a la base".'<br>');
 Eloquent::start(__DIR__.'/gamepedia/conf/conf.ini.dist');
 
 $g = new Game();
-$c = new \gamepedia\Company();
-$p = new \gamepedia\Platform();
+$c = new \gamepedia\models\Company();
+$p = new \gamepedia\models\Platform();
+$g2c = new \gamepedia\models\Game2character();
 
 /** séace 1 */
 //q1
@@ -49,10 +50,15 @@ $p = new \gamepedia\Platform();
 //q3
 //echo "Platforme vendus plus de 10 000 000 de fois : </br> ".$p->baseInstalle();
 //q4
-echo "442 jeux a partir du 21173".$g->quatrequatredeux();
+//echo "442 jeux a partir du 21173 : </br>";
+//$g->quatrequatredeux();
 //q5
 //echo($g->JeuxPaginer());
 
+
+/** séance 2 */
+//q1
+echo $g2c->selectCharacter(12342)
 
 
 echo 'Fin fichier';

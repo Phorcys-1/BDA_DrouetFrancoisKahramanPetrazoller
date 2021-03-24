@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GamePedia/Platform.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamePedia/models/Game.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamePedia/models/Platform.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamePedia/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/Game.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/Game.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/Platform.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamepedia/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Company.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,6 +69,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xamppOk\htdocs\src\BDA\BDA_drouetfrancoiskahramanpetrazoller\gamepedia\models" />
       <recent name="C:\xamppOk\htdocs\src\BDA\BDA_drouetfrancoiskahramanpetrazoller\gamepedia" />
     </key>
   </component>
@@ -80,7 +84,8 @@
       <workItem from="1615361414242" duration="2539000" />
       <workItem from="1615565242205" duration="1240000" />
       <workItem from="1615566567729" duration="3733000" />
-      <workItem from="1615986378045" duration="5645000" />
+      <workItem from="1615986378045" duration="6884000" />
+      <workItem from="1616591428279" duration="941000" />
     </task>
     <servers />
   </component>
@@ -92,23 +97,24 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="547" y="294" width="442" height="265" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1615361685401" />
-    <state x="462" y="135" key="NewPhpClassDialog" timestamp="1615991226431">
+    <state x="462" y="135" key="NewPhpClassDialog" timestamp="1616592194523">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="135" key="NewPhpClassDialog/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1615991226431" />
+    <state x="462" y="135" key="NewPhpClassDialog/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1616592194523" />
     <state x="462" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1615361754064" />
-    <state x="-942" y="-77" width="884" height="606" key="dock-window-1" timestamp="1615986925528">
-      <screen x="-1360" y="-182" width="1360" height="728" />
+    <state x="472" y="118" width="884" height="606" key="dock-window-1" timestamp="1616592013649">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="-942" y="-77" width="884" height="606" key="dock-window-1/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1615986925528" />
+    <state x="472" y="118" width="884" height="606" key="dock-window-1/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1616592013649" />
+    <state x="472" y="118" width="884" height="606" key="dock-window-1/0.0.1536.824@0.0.1536.824" timestamp="1616001434871" />
     <state x="809" y="189" key="run.anything.popup" timestamp="1615567123773">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="809" y="189" key="run.anything.popup/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1615567123773" />
-    <state x="431" y="145" key="search.everywhere.popup" timestamp="1615986855356">
+    <state x="431" y="145" key="search.everywhere.popup" timestamp="1616592183389">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1615986855356" />
+    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1616592183389" />
     <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615361733046" />
   </component>
 </project>

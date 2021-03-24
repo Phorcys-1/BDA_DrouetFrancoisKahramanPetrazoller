@@ -1,7 +1,7 @@
 <?php
 
 
-namespace gamepedia;
+namespace gamepedia\models;
 use Illuminate\Database\Eloquent\Model;
 
 class Game extends \Illuminate\Database\Eloquent\Model
