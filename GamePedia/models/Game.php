@@ -36,6 +36,9 @@ public function JeuxPaginer() {
 }
     //return Game::query()->with('name', 'deck')->get();
 
-
+    //Seance2 Q2
+    public function getIdByMario() {
+        return Game::query()->select('id')->where('name', 'like', '%Mario%')->get();
+    }
 
 }
