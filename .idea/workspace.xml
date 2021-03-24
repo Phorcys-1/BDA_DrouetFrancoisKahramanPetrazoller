@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/models/Character.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Character.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +80,7 @@
       <workItem from="1615565242205" duration="1240000" />
       <workItem from="1615566567729" duration="3733000" />
       <workItem from="1615986378045" duration="6884000" />
-      <workItem from="1616591428279" duration="1668000" />
+      <workItem from="1616591428279" duration="2413000" />
     </task>
     <servers />
   </component>
