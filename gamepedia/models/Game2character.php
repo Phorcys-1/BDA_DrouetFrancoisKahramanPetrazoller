@@ -13,9 +13,12 @@ class Game2character extends \Illuminate\Database\Eloquent\Model
     public function selectCharacter($game_id) {
         $res =  Game2character::query()->where('game_id', '=', $game_id)
             ->select('character_id')->get();
+        /*
         foreach ($res as $char){
-            echo " - ".$char["name"]."</br>";
+            echo " - ".$char["character_id"]."</br>";
         }
+        */
+        return $res;
     }
 
 }

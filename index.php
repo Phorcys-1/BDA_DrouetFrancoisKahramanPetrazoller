@@ -41,6 +41,8 @@ $g = new Game();
 $c = new \gamepedia\models\Company();
 $p = new \gamepedia\models\Platform();
 $g2c = new \gamepedia\models\Game2character();
+$ch = new \gamepedia\models\Character();
+
 
 /** séace 1 */
 //q1
@@ -58,7 +60,7 @@ $g2c = new \gamepedia\models\Game2character();
 
 /** séance 2 */
 //q1
-echo $g2c->selectCharacter(12342)
+echo $ch->printCharacters($g2c->selectCharacter(12342));
 
 
 echo 'Fin fichier';
