@@ -18,4 +18,15 @@ class Company extends \Illuminate\Database\Eloquent\Model
         }
     }
 
+    public function selectByName($name) {
+        $res =  Company::query()->where('name', 'like',"%$name%")
+            ->select('id')->get();
+        /*
+        foreach ($res as $char){
+            echo " - ".$char["character_id"]."</br>";
+        }
+        */
+        return $res;
+    }
+
 }

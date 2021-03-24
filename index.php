@@ -18,7 +18,7 @@ echo 'init'.'<br>';
 
 $db = new DB();
 print ("eloquent installé".'<br>');
-
+/*
 $db->addConnection([
     'driver' => 'mysql',
     'host' => 'root',
@@ -29,7 +29,7 @@ $db->addConnection([
     'collation' => 'utf8_unicode_ci',
     'prefix'    => ''
 ]);
-
+*/
 $db->setAsGlobal();
 $db->bootEloquent();
 print ("connécté a la base".'<br>');
@@ -42,6 +42,7 @@ $c = new \gamepedia\models\Company();
 $p = new \gamepedia\models\Platform();
 $g2c = new \gamepedia\models\Game2character();
 $ch = new \gamepedia\models\Character();
+$gd = new \gamepedia\models\Game_developers();
 
 
 /** séace 1 */
@@ -60,7 +61,13 @@ $ch = new \gamepedia\models\Character();
 
 /** séance 2 */
 //q1
-echo $ch->printCharacters($g2c->selectCharacter(12342));
+//echo $ch->printCharacters($g2c->selectCharacter(12342));
+
+//q3
+echo "Jeux de Sony : </br>";
+echo $gd->printGames($c->selectByName("Sony"));
+
+
 
 
 echo 'Fin fichier';
