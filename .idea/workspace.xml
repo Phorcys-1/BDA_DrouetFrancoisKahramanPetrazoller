@@ -3,6 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/conf/conf.ini.dist" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/conf/conf.ini.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/models/Character.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Character.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/models/Game.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Game.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

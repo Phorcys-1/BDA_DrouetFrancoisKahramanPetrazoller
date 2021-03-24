@@ -23,8 +23,8 @@ $db->addConnection([
     'driver' => 'mysql',
     'host' => 'root',
     'database' => 'gamepedia',
-    'username' => 'root',
-    'password' => 'root',
+    'username' => 'gamepedia',
+    'password' => 'gp2021',
     'charset' => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix'    => ''
@@ -32,7 +32,7 @@ $db->addConnection([
 
 $db->setAsGlobal();
 $db->bootEloquent();
-print ("connécté a la base".'<br>');
+print ("connecté a la base".'<br>');
 
 
 Eloquent::start(__DIR__.'/gamepedia/conf/conf.ini.dist');
@@ -43,8 +43,13 @@ $p = new \gamepedia\models\Platform();
 $g2c = new \gamepedia\models\Game2character();
 $ch = new \gamepedia\models\Character();
 
+//Séance 2 ex2
+$gameid = new \gamepedia\models\Game();
+$iddeschara = new \gamepedia\models\Game2character();
+$res = new \gamepedia\models\Character();
 
-/** séace 1 */
+
+/** séance 1 */
 //q1
 //var_dump($g->mario());
 //q2
@@ -63,8 +68,13 @@ $ch = new \gamepedia\models\Character();
 echo $ch->printCharacters($g2c->selectCharacter(12342));
 
 
-echo 'Fin fichier';
+echo 'Fin fichier <br> </br>';
 
+//q2
+echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
+foreach ($gameid->getIdByMario() as $value)
+    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
+echo '<br></br>Fin de la requête... <br></br>';
 
 
 
