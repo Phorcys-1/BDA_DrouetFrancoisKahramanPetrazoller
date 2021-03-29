@@ -44,7 +44,7 @@ $g2c = new \gamepedia\models\Game2character();
 $ch = new \gamepedia\models\Character();
 $gd = new \gamepedia\models\Game_developers();
 
-//Séance 2 ex2
+//q2
 $gameid = new \gamepedia\models\Game();
 $iddeschara = new \gamepedia\models\Game2character();
 $res = new \gamepedia\models\Character();
@@ -78,10 +78,31 @@ echo $gd->printGames($c->selectByName("Sony"));
 echo 'Fin fichier <br> </br>';
 
 //q2
-echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
-foreach ($gameid->getIdByMario() as $value)
-    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
+//echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
+//foreach ($gameid->getIdByMario() as $value)
+//    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
+//echo '<br>Fin de la requête... <br></br>';
+
+
+//q4 variables
+$gameidrating = new \gamepedia\models\Game();
+$idrating = new \gamepedia\models\Game2rating();
+$tmp = new \gamepedia\models\Game2rating();
+$idratingboard = new \gamepedia\models\Game_rating();
+$nameRatingBoard = new \gamepedia\models\Rating_board();
+//q4
+echo 'Question 4, Séance 2 : Récupère le rating initial des jeux dont le nom contient Mario :<br></br>';
+
+foreach ($gameidrating->getIdByMario() as $value) {
+    $tmp = $idrating->selectRatingID($value['id']);
+    $len = $tmp != null ? count($tmp) : 0;
+    if($len) {
+        echo $nameRatingBoard->selectNameRating($idratingboard->selectRatingBoardId($idrating->selectRatingID($value['id'])));
+    }
+}
 echo '<br></br>Fin de la requête... <br></br>';
+
+
 
 
 
