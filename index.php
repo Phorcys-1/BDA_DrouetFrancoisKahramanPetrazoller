@@ -105,6 +105,7 @@ foreach ($gameidrating->getIdByMario() as $value) {
     }
 }
 echo '<br></br>Fin de la requête... <br></br>';
+
 */
 //q9
 //crée un genre
@@ -131,8 +132,13 @@ echo( "</br>".\gamepedia\models\Game2genre::query()->where("genre_id", "=","51")
 
 
 /** séance 4 */
-$u = new \gamepedia\models\User("nom@prenom.fr", "Nom", "Prenom",
-    "1 rue de la ville", 9876543210, "01/01/2000");
+echo date('01-01-01');
+$u = new \gamepedia\models\User("nom10@prenom.fr", "Nom", "Prenom",
+    "1 rue de la ville", 0, date('01-01-2000'));
+$u = new \gamepedia\models\User("nom11@prenom.fr", "Nom", "Prenom",
+    "1 rue de la ville", 0642, date('01-01-2000'));
+$u = new \gamepedia\models\User("nom12@prenom.fr", "Nom", "Prenom",
+    "1 rue de la ville", 1234, date('01-01-2000'));
 
 echo "</br> Fin fichier  </br>";
 
