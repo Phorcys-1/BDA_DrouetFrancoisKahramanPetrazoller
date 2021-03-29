@@ -79,15 +79,15 @@ $res = new \gamepedia\models\Character();
 
 //q2
 //echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
-/*
-foreach ($gameid->getIdByMario() as $value)
-    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
+
+//foreach ($gameid->getIdByMario() as $value)
+//    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
 //echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
 //foreach ($gameid->getIdByMario() as $value)
 //    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
 //echo '<br>Fin de la requête... <br></br>';
 
-
+/*
 //q4 variables
 $gameidrating = new \gamepedia\models\Game();
 $idrating = new \gamepedia\models\Game2rating();
@@ -107,6 +107,21 @@ foreach ($gameidrating->getIdByMario() as $value) {
 echo '<br></br>Fin de la requête... <br></br>';
 
 */
+
+//Q5 variables
+$lesjeux = new \gamepedia\models\Game();
+$listgamemario = new \gamepedia\models\Game2character();
+//Q5, Séance 2
+echo 'Question 5, Séance 2 : Récupère les jeux dont le nom commence par Mario ou il y a plus de 3 personnages :<br></br>';
+
+foreach ($lesjeux->getIdByMario() as $value) {
+    $count = 0;
+    if(count($listgamemario->selectGameByNumberChara($value['id'])) > 3)
+        echo $value['id']  . '<br></br>';
+}
+echo '<br></br>Fin de la requête... <br></br>';
+
+/*
 //q9
 //crée un genre
 //$superGenre = new \gamepedia\models\Genre();
