@@ -42,5 +42,6 @@ class Commentary extends \Illuminate\Database\Eloquent\Model
         $comm->save();
         echo '$comm created';
     }
+    
 
 }

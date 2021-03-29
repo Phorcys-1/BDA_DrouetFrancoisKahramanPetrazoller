@@ -167,6 +167,7 @@ $c = new \gamepedia\models\Commentary("Very good", "this game is very good", dat
     date('29-03-2020'),"nom11@prenom.fr",12342);
 
 echo $c::query()->get();
+//TODO Le modèle associé à la table des commentaires doit indiquer que les timestamps seront gérés. ????
 */
 echo "</br> Fin fichier  </br>";
 
