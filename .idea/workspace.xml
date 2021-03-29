@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="ajout de la q4">
+    <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/GamePedia/conf/conf.ini.dist" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/conf/conf.ini.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamepedia/models/Game2character.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamepedia/models/Game2character.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gamepedia/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/gamepedia/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

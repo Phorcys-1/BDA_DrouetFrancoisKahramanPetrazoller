@@ -107,7 +107,7 @@ foreach ($gameidrating->getIdByMario() as $value) {
 echo '<br></br>Fin de la requête... <br></br>';
 
 */
-
+/*
 //Q5 variables
 $lesjeux = new \gamepedia\models\Game();
 $listgamemario = new \gamepedia\models\Game2character();
@@ -120,7 +120,7 @@ foreach ($lesjeux->getIdByMario() as $value) {
         echo $value['id']  . '<br></br>';
 }
 echo '<br></br>Fin de la requête... <br></br>';
-
+*/
 /*
 //q9
 //crée un genre
@@ -147,6 +147,9 @@ echo( "</br>".\gamepedia\models\Game2genre::query()->where("genre_id", "=","51")
 
 
 /** séance 4 */
+//q1
+//TODO n° de tel incohérent parfois
+/*
 echo date('01-01-01');
 $u = new \gamepedia\models\User("nom10@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 0, date('01-01-2000'));
@@ -154,6 +157,10 @@ $u = new \gamepedia\models\User("nom11@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 0642, date('01-01-2000'));
 $u = new \gamepedia\models\User("nom12@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 1234, date('01-01-2000'));
+$u = new \gamepedia\models\User("nom13@prenom.fr", "Nom", "Prenom",
+    "1 rue de la ville", 0606060606, date('01-01-2000'));
+*/
+
 
 echo "</br> Fin fichier  </br>";
 

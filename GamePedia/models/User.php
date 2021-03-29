@@ -10,6 +10,18 @@ class User extends \Illuminate\Database\Eloquent\Model
     public $timestamps = false;
     protected $dates =['dateNaiss'];
 
+    /**
+     code sql table user :
+    CREATE table user (
+    email Varchar (50),
+    Nom VARCHAR(50),
+    Prenom VARCHAR(50),
+    Adresse VARCHAR(100),
+    Tel integer(100),
+    DateNaiss date,
+    PRIMARY KEY (email)
+    );
+     */
 
     function __construct(){
         $a = func_get_args();
