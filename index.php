@@ -52,7 +52,7 @@ $res = new \gamepedia\models\Character();
 
 /** séance 1 */
 //q1
-var_dump($g->mario());
+//var_dump($g->mario());
 //q2
 //echo "Compagnies japonaises : </br> ".$c->japon();
 //q3
@@ -85,13 +85,24 @@ foreach ($gameid->getIdByMario() as $value)
 echo '<br></br>Fin de la requête... <br></br>';
 */
 //q9
-var_dump( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+//crée un genre
 $superGenre = new \gamepedia\models\Genre();
 $superGenre->name = "Super Genre";
 $superGenre->deck = "Ces jeux sont vraiment trop bien";
 $superGenre->save();
 
-var_dump( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+//verifie si le genre à été crée
+echo( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+
+//associe le genre a 12, 56 & 345
+foreach ([12,56,345] as $key => $id) {
+    $association = new \gamepedia\models\Game2genre();
+    $association->game_id = $id;
+    $association->genre_id = 51;
+    $association->save();
+}
+//verifie si l'association
+echo( "</br>".\gamepedia\models\Game2genre::query()->where("genre_id", "=","51")->get());
 
 
 echo 'Fin fichier <br> </br>';
