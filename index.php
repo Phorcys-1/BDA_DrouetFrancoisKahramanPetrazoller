@@ -108,15 +108,16 @@ echo '<br></br>Fin de la requête... <br></br>';
 */
 //q9
 //crée un genre
-$superGenre = new \gamepedia\models\Genre();
-$superGenre->name = "Super Genre";
-$superGenre->deck = "Ces jeux sont vraiment trop bien";
-$superGenre->save();
+//$superGenre = new \gamepedia\models\Genre();
+//$superGenre->name = "Super Genre";
+//$superGenre->deck = "Ces jeux sont vraiment trop bien";
+//$superGenre->save();
 
 //verifie si le genre à été crée
-echo( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+//echo( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
 
 //associe le genre a 12, 56 & 345
+/*
 foreach ([12,56,345] as $key => $id) {
     $association = new \gamepedia\models\Game2genre();
     $association->game_id = $id;
@@ -125,9 +126,15 @@ foreach ([12,56,345] as $key => $id) {
 }
 //verifie si l'association
 echo( "</br>".\gamepedia\models\Game2genre::query()->where("genre_id", "=","51")->get());
+*/
 
 
-echo 'Fin fichier <br> </br>';
+
+/** séance 4 */
+$u = new \gamepedia\models\User("nom@prenom.fr", "Nom", "Prenom",
+    "1 rue de la ville", 9876543210, "01/01/2000");
+
+echo "</br> Fin fichier  </br>";
 
 
 

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/GamePedia/models/Game2genre.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GamePedia/models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
@@ -83,7 +82,7 @@
       <workItem from="1615566567729" duration="3733000" />
       <workItem from="1615986378045" duration="6884000" />
       <workItem from="1616591428279" duration="1668000" />
-      <workItem from="1617019748150" duration="829000" />
+      <workItem from="1617019748150" duration="2449000" />
     </task>
     <servers />
   </component>
@@ -95,10 +94,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="547" y="294" width="442" height="265" key="ComposerInitDialogKey/0.0.1536.824@0.0.1536.824" timestamp="1615361685401" />
-    <state x="462" y="135" key="NewPhpClassDialog" timestamp="1617020099146">
+    <state x="462" y="135" key="NewPhpClassDialog" timestamp="1617020794057">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="462" y="135" key="NewPhpClassDialog/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1617020099146" />
+    <state x="462" y="135" key="NewPhpClassDialog/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1617020794057" />
     <state x="462" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1615361754064" />
     <state x="604" y="335" key="NewPhpFileDialog" timestamp="1617020087126">
       <screen x="0" y="0" width="1536" height="824" />
@@ -113,10 +112,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="809" y="189" key="run.anything.popup/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1615567123773" />
-    <state x="431" y="145" key="search.everywhere.popup" timestamp="1616592183389">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1617022101098">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1616592183389" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1617022101098" />
     <state x="431" y="145" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615361733046" />
   </component>
 </project>
