@@ -159,9 +159,15 @@ $u = new \gamepedia\models\User("nom12@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 1234, date('01-01-2000'));
 $u = new \gamepedia\models\User("nom13@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 0606060606, date('01-01-2000'));
+
+
+$c = new \gamepedia\models\Commentary("Very good", "this game is very good", date('29-03-2020'),
+    date('29-03-2020'),"nom10@prenom.fr",12342);
+$c = new \gamepedia\models\Commentary("Very good", "this game is very good", date('29-03-2020'),
+    date('29-03-2020'),"nom11@prenom.fr",12342);
+
+echo $c::query()->get();
 */
-
-
 echo "</br> Fin fichier  </br>";
 
 
