@@ -69,15 +69,19 @@ $res = new \gamepedia\models\Character();
 //echo $ch->printCharacters($g2c->selectCharacter(12342));
 
 //q3
-echo "Jeux de Sony : </br>";
-echo $gd->printGames($c->selectByName("Sony"));
+//echo "Jeux de Sony : </br>";
+//echo $gd->printGames($c->selectByName("Sony"));
 
 
 
 
-echo 'Fin fichier <br> </br>';
+
 
 //q2
+//echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
+/*
+foreach ($gameid->getIdByMario() as $value)
+    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
 //echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
 //foreach ($gameid->getIdByMario() as $value)
 //    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
@@ -101,9 +105,29 @@ foreach ($gameidrating->getIdByMario() as $value) {
     }
 }
 echo '<br></br>Fin de la requête... <br></br>';
+*/
+//q9
+//crée un genre
+$superGenre = new \gamepedia\models\Genre();
+$superGenre->name = "Super Genre";
+$superGenre->deck = "Ces jeux sont vraiment trop bien";
+$superGenre->save();
+
+//verifie si le genre à été crée
+echo( \gamepedia\models\Genre::query()->where("name", "=","Super Genre")->get());
+
+//associe le genre a 12, 56 & 345
+foreach ([12,56,345] as $key => $id) {
+    $association = new \gamepedia\models\Game2genre();
+    $association->game_id = $id;
+    $association->genre_id = 51;
+    $association->save();
+}
+//verifie si l'association
+echo( "</br>".\gamepedia\models\Game2genre::query()->where("genre_id", "=","51")->get());
 
 
-
+echo 'Fin fichier <br> </br>';
 
 
 

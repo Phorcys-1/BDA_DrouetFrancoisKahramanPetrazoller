@@ -18,6 +18,11 @@ class Company extends \Illuminate\Database\Eloquent\Model
         }
     }
 
+    /**
+     * retourne la liste des company contenant le nom donné en paramètre
+     * @param $name
+     * @return un tableau d'id de company
+     */
     public function selectByName($name) {
         $res =  Company::query()->where('name', 'like',"%$name%")
             ->select('id')->get();
