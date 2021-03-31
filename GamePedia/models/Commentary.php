@@ -7,7 +7,7 @@ class Commentary extends \Illuminate\Database\Eloquent\Model
 {
     protected $table='commentary';
     //protected $primaryKey='posted_by','posted_on';
-    public $timestamps = false;
+    public $timestamps = true;
     protected $dates =['updated_at', 'created_at'];
 
     /**

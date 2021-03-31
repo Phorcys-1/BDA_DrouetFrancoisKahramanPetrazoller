@@ -120,7 +120,7 @@ foreach ($lesjeux->getIdByMario() as $value) {
 }
 echo '<br></br>Fin de la requête... <br></br>';
 */
-
+/*
 //Q6 variables
 $jeux = new \gamepedia\models\Game();
 $idrating = new \gamepedia\models\Game2rating();
@@ -202,8 +202,20 @@ $c = new \gamepedia\models\Commentary("Very good", "this game is very good", dat
 echo $c::query()->get();
 //TODO Le modèle associé à la table des commentaires doit indiquer que les timestamps seront gérés. ????
 */
+
+//Partie 2 faker :
+$faker = Faker\Factory::create();
+$user1 = new User();
+$user1->mail = $faker->email();
+$user1->prenom = $faker->firstName();
+$user1->nom = $faker->lastName();
+$user1->adresse = $faker->address();
+$user1->tel = $faker->phoneNumber();
+$user1->dateNaissance = $faker->dateTimeBetween('1990-01-01', '2012-12-31')->format('d/m/Y');
+$user1->save();
+
+
 echo "</br> Fin fichier  </br>";
-*/
 
 
 
