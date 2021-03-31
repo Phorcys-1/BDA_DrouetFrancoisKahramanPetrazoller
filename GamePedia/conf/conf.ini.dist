@@ -1,6 +1,6 @@
 driver=mysql
-username=root
-password=root
+username=gamepedia
+password=gp2021
 host=localhost
 database=gamepedia
 charset=utf8

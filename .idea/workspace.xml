@@ -87,6 +87,7 @@
       <workItem from="1616591428279" duration="1668000" />
       <workItem from="1617019748150" duration="829000" />
       <workItem from="1617192389160" duration="336000" />
+      <workItem from="1617193632971" duration="8192000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de la q5">
       <created>1617024998977</created>
@@ -118,11 +119,5 @@
     <MESSAGE value="ajout de la q4" />
     <MESSAGE value="ajout de la q5" />
     <option name="LAST_COMMIT_MESSAGE" value="ajout de la q5" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="441" y="135" key="NewPhpClassDialog" timestamp="1617025840738">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="441" y="135" key="NewPhpClassDialog/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1617025840738" />
   </component>
 </project>

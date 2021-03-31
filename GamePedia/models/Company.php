@@ -34,4 +34,21 @@ class Company extends \Illuminate\Database\Eloquent\Model
         return $res;
     }
 
+    /**
+     * retourne la liste des id des companies contenant Inc
+     * @param
+     * @return les id des compagnies qui possèdes Inc dans leur nom
+     */
+    public function selectIDByInc($comp_id) {
+        $res =  Company::query()->select('id')->where('id','=', $comp_id)->get();
+        return $res;
+    }
+
+    public function selectIDByNAME(int $comp_id) {
+        $res = Company::query()->select('id')->where('id', '=', $comp_id)->where('name', 'like', '%Inc%')->get();
+        return $res;
+    }
+
+
+
 }
