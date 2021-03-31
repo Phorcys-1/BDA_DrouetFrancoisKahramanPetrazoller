@@ -20,13 +20,10 @@ class Game_publishers extends \Illuminate\Database\Eloquent\Model
         return $res;
     }
 
-    public function selectIDByCompINC(int $id) {
+    public function selectGame_IdByComp_id(int $id) {
         $res = Game_publishers::query()->select('game_id')->where('comp_id', '=', $id)->get();
         return $res;
     }
-
-
-
 
 
 }

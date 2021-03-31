@@ -152,14 +152,16 @@ $ljeux = new \gamepedia\models\Game();
 $ljeuxInc = new \gamepedia\models\Game_publishers();
 $lcomp = new \gamepedia\models\Company();
 $jeremonte = new \gamepedia\models\Game_publishers();
-
+$idrating2 = new \gamepedia\models\Game2rating();
+$idratingboard2 = new \gamepedia\models\Game_rating();
+$res2 = new \gamepedia\models\Game2rating();
+$r2 = new \gamepedia\models\Game();
+$tmpq73 = new \gamepedia\models\Game2rating();
 $tmpq7 = new \gamepedia\models\Game_publishers();
 $tmpq72 = new \gamepedia\models\Company();
 //Q7
 echo 'Question 7, Séance 2 : Récupère les jeux dont le nom commence par Mario ou le rating initial contient "3+" et la compagnie contient "Inc" :<br></br>';
 
-echo 'Liste des ID des compagnies qui ont publié un jeu dont le nom commence par Mario et la compagnie contient INC : <br></br>';
-/*
 foreach ($ljeux->getIdByMario() as $value) {
     $tmpq7 = $ljeuxInc->selectComp_idByGame_id($value['id']);
     $len = $tmpq7 != null ? count($tmpq7) : 0;
@@ -185,6 +187,26 @@ foreach ($ljeux->getIdByMario() as $value) {
             $len2 = $tmpq72 != null ? count($tmpq72) : 0;
             if($len2) {
                 echo $lcomp->selectIDByNAME($val['comp_id']);
+                $lcomp->selectIDByNAME($val['comp_id']);
+                foreach ($lcomp->selectIDByNAME($val['comp_id']) as $va) {
+                    $jeremonte->selectGame_IdByComp_id($va['id']);
+                    foreach($jeremonte->selectGame_IdByComp_id($va['id']) as $v) {
+                        $tmpq73 = $idrating2->selectRatingID($v['game_id']);
+                        $len3 = $tmpq73 != null ? count($tmpq73) : 0;
+                        if($len3) {
+                            $idratingboard2->selectNameBy3plus($idrating2->selectRatingID($v['game_id']));
+                            if(!empty($idratingboard2->selectNameBy3plus($idrating2->selectRatingID($v['game_id'])))){
+                                foreach ($idratingboard2->selectNameBy3plus($idrating2->selectRatingID($v['game_id'])) as $valuue) {
+                                    $res2->selectIDInGame2($valuue['id']);
+                                    if(!empty($res2->selectIDInGame2($valuue['id'])))
+                                        foreach ($res2->selectIDInGame2($valuue['id']) as $valuuue) {
+                                            echo $r2->getJeuxByMario($valuuue['game_id']);
+                                        }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
