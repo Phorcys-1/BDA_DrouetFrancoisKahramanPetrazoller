@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="ajout de la q6">
-      <change afterPath="$PROJECT_DIR$/GamePedia/models/Game_publishers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BDA_drouetfrancoiskahramanpetrazoller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BDA_drouetfrancoiskahramanpetrazoller.iml" afterDir="false" />
+    <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="ajout du début de la q7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamePedia/conf/conf.ini.dist" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/conf/conf.ini.dist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamePedia/models/Company.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Company.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GamePedia/models/Game_publishers.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Game_publishers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -52,6 +49,8 @@
       <path value="$PROJECT_DIR$/vendor/illuminate/database" />
       <path value="$PROJECT_DIR$/vendor/illuminate/container" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pYYHViMtFkNPCEiall9yzyHzUK" />
@@ -87,7 +86,7 @@
       <workItem from="1616591428279" duration="1668000" />
       <workItem from="1617019748150" duration="829000" />
       <workItem from="1617192389160" duration="336000" />
-      <workItem from="1617193632971" duration="8192000" />
+      <workItem from="1617193632971" duration="10964000" />
     </task>
     <task id="LOCAL-00001" summary="ajout de la q5">
       <created>1617024998977</created>
@@ -96,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617024998977</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ajout du début de la q7">
+      <created>1617201979739</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617201979739</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +124,7 @@
     <MESSAGE value="ajout de la q2" />
     <MESSAGE value="ajout de la q4" />
     <MESSAGE value="ajout de la q5" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout de la q5" />
+    <MESSAGE value="ajout du début de la q7" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout du début de la q7" />
   </component>
 </project>
