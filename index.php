@@ -145,7 +145,7 @@ foreach ($jeux->getIdByMario() as $value) {
 }
 
 echo '<br></br>Fin de la requête... <br></br>';
-*/
+
 
 //Q7 variables
 $ljeux = new \gamepedia\models\Game();
@@ -174,7 +174,7 @@ foreach ($ljeux->getIdByMario() as $value) {
         }
     }
 }
-*/
+
 foreach ($ljeux->getIdByMario() as $value) {
     $tmpq7 = $ljeuxInc->selectComp_idByGame_id($value['id']);
     $len = $tmpq7 != null ? count($tmpq7) : 0;
@@ -231,10 +231,12 @@ $u = new \gamepedia\models\User("nom11@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 0642, date('01-01-2000'));
 $u = new \gamepedia\models\User("nom12@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 1234, date('01-01-2000'));
-$u = new \gamepedia\models\User("nom13@prenom.fr", "Nom", "Prenom",
+
+$u = new \gamepedia\models\User("nom16@prenom.fr", "Nom", "Prenom",
     "1 rue de la ville", 0606060606, date('01-01-2000'));
 
 
+/*
 $c = new \gamepedia\models\Commentary("Very good", "this game is very good", date('29-03-2020'),
     date('29-03-2020'),"nom10@prenom.fr",12342);
 $c = new \gamepedia\models\Commentary("Very good", "this game is very good", date('29-03-2020'),
@@ -246,15 +248,18 @@ echo $c::query()->get();
 
 //Partie 2 faker :
 $faker = Faker\Factory::create();
-$user1 = new User();
-$user1->mail = $faker->email();
-$user1->prenom = $faker->firstName();
-$user1->nom = $faker->lastName();
-$user1->adresse = $faker->address();
-$user1->tel = $faker->phoneNumber();
-$user1->dateNaissance = $faker->dateTimeBetween('1990-01-01', '2012-12-31')->format('d/m/Y');
-$user1->save();
+//utilisateur aleatoire
+$u = new \gamepedia\models\User($faker->email(), $faker->lastName(),
+    $faker->firstName(), $faker->address(), $faker->phoneNumber(),
+    $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'));
 
+//commentaire aleatoire
+$commEmail =\gamepedia\models\User::all()->random(1)[0]{"email"};
+$commGame = \gamepedia\models\Game::all()->random(1)[0]{"id"};
+$c = new \gamepedia\models\Commentary($faker->text(), $faker->text(),
+    $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'),
+    $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'),
+    $commEmail, $commGame);
 
 echo "</br> Fin fichier  </br>";
 

@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 class User extends \Illuminate\Database\Eloquent\Model
 {
     protected $table='user';
-    protected $primaryKey='email';
+    //protected $primaryKey='email';
     public $timestamps = false;
     protected $dates =['dateNaiss'];
 

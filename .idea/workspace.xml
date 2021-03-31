@@ -2,12 +2,59 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abf1a4c0-ac51-4ba2-b6c5-9ea69cc27497" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/BDA_drouetfrancoiskahramanpetrazoller.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BDA_drouetfrancoiskahramanpetrazoller.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GamePedia/models/Commentary.php" beforeDir="false" afterPath="$PROJECT_DIR$/GamePedia/models/Commentary.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/ClassLoader.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/InstalledVersions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_psr4.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vendor/composer/installed.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/collections/LazyCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/collections/LazyCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/container/Container.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/container/Container.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/contracts/Mail/Factory.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/contracts/Mail/Factory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Concerns/BuildsQueries.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Concerns/BuildsQueries.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/DetectsLostConnections.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/DetectsLostConnections.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Casts/AsArrayObject.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Casts/AsArrayObject.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Casts/AsCollection.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Casts/AsCollection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Concerns/QueriesRelationships.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Concerns/QueriesRelationships.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/BelongsTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/BelongsTo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/BelongsToMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/BelongsToMany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/Concerns/InteractsWithPivotTable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/HasManyThrough.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/HasManyThrough.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/HasOneOrMany.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/HasOneOrMany.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/HasOneThrough.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/HasOneThrough.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/MorphPivot.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/MorphPivot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/MorphTo.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Eloquent/Relations/MorphTo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/database/Schema/MySqlSchemaState.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/database/Schema/MySqlSchemaState.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Facades/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Facades/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Facades/Event.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Facades/Event.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Manager.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Manager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Str.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Str.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Stringable.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Stringable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/BatchRepositoryFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/BatchRepositoryFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/BusFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/BusFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/EventFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/EventFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/MailFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/MailFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/NotificationFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/NotificationFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/PendingMailFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/PendingMailFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/QueueFake.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/Testing/Fakes/QueueFake.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/illuminate/support/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/illuminate/support/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Command/Command.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/Helper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/Helper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/ProgressBar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Helper/QuestionHelper.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/ArrayInput.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/ArrayInput.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Input/InputOption.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Input/InputOption.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/console/Style/SymfonyStyle.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/string/Inflector/EnglishInflector.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/string/Inflector/EnglishInflector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/symfony/translation/MessageCatalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/symfony/translation/MessageCatalogue.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +75,6 @@
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
       <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
       <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
       <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
@@ -41,17 +87,20 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
       <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
       <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/macroable" />
       <path value="$PROJECT_DIR$/vendor/psr/container" />
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
-      <path value="$PROJECT_DIR$/vendor/symfony/string" />
-      <path value="$PROJECT_DIR$/vendor/symfony/console" />
-      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/support" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/collections" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/database" />
-      <path value="$PROJECT_DIR$/vendor/illuminate/container" />
       <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/macroable" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/collections" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/database" />
     </include_path>
   </component>
   <component name="ProjectId" id="1pYYHViMtFkNPCEiall9yzyHzUK" />
@@ -119,5 +168,11 @@
     <MESSAGE value="ajout de la q4" />
     <MESSAGE value="ajout de la q5" />
     <option name="LAST_COMMIT_MESSAGE" value="ajout de la q5" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="475" y="0" width="1075" height="811" key="dock-window-1" timestamp="1617202776224">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="0" width="1075" height="811" key="dock-window-1/0.0.1536.824/-1360.-182.1360.728@0.0.1536.824" timestamp="1617202776224" />
   </component>
 </project>

@@ -8,7 +8,7 @@ class Commentary extends \Illuminate\Database\Eloquent\Model
     protected $table='commentary';
     //protected $primaryKey='posted_by','posted_on';
     public $timestamps = true;
-    protected $dates =['updated_at', 'created_at'];
+    //protected $dates =['updated_at', 'created_at'];
 
     /**
     code sql table commentary :
@@ -36,7 +36,7 @@ class Commentary extends \Illuminate\Database\Eloquent\Model
         $comm->title = $pTitle;
         $comm->content = $pContent;
         $comm->created_at = $pCreated_at;
-        $comm->updated_at = $pUpdated_at;
+        //$comm->updated_at = $pUpdated_at;
         $comm->posted_by = $pPosted_by;
         $comm->posted_on = $pPosted_on;
         $comm->save();
