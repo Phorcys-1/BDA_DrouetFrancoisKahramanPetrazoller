@@ -38,7 +38,11 @@ public function JeuxPaginer() {
 
     //Seance2 Q2
     public function getIdByMario() {
-        return Game::query()->select('id')->where('name', 'like', '%Mario%')->get();
+        return Game::query()->select('id')->where('name', 'like', 'Mario%')->get();
+    }
+    //q6
+    public function getJeuxByMario($game_id) {
+        return Game::query()->select('id')->where('id', '=', $game_id)->where('name', 'like', 'Mario%')->get();
     }
 
 }

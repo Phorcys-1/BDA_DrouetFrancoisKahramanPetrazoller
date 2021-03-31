@@ -106,7 +106,6 @@ foreach ($gameidrating->getIdByMario() as $value) {
 }
 echo '<br></br>Fin de la requête... <br></br>';
 
-*/
 /*
 //Q5 variables
 $lesjeux = new \gamepedia\models\Game();
@@ -121,6 +120,40 @@ foreach ($lesjeux->getIdByMario() as $value) {
 }
 echo '<br></br>Fin de la requête... <br></br>';
 */
+
+//Q6 variables
+$jeux = new \gamepedia\models\Game();
+$idrating = new \gamepedia\models\Game2rating();
+$tmp = new \gamepedia\models\Game2rating();
+$idratingboard = new \gamepedia\models\Game_rating();
+$res = new \gamepedia\models\Game2rating();
+$r = new \gamepedia\models\Game();
+//Q6, Séance 2
+echo 'Question 6, Séance 2 : Récupère les jeux dont le nom commence par Mario ou le rating initial contient "3+" :<br></br>';
+
+foreach ($jeux->getIdByMario() as $value) {
+    $tmp = $idrating->selectRatingID($value['id']);
+    $len = $tmp != null ? count($tmp) : 0;
+    if($len) {
+        $idratingboard->selectNameBy3plus($idrating->selectRatingID($value['id']));
+        if(!empty($idratingboard->selectNameBy3plus($idrating->selectRatingID($value['id'])))){
+            foreach ($idratingboard->selectNameBy3plus($idrating->selectRatingID($value['id'])) as $val) {
+                $res->selectIDInGame2($val['id']);
+                if(!empty($res->selectIDInGame2($val['id'])))
+                foreach ($res->selectIDInGame2($val['id']) as $va) {
+                    echo $r->getJeuxByMario($va['game_id']);
+                }
+
+            }
+
+        }
+
+    }
+
+}
+
+echo '<br></br>Fin de la requête... <br></br>';
+
 /*
 //q9
 //crée un genre
@@ -170,7 +203,7 @@ echo $c::query()->get();
 //TODO Le modèle associé à la table des commentaires doit indiquer que les timestamps seront gérés. ????
 */
 echo "</br> Fin fichier  </br>";
-
+*/
 
 
 
