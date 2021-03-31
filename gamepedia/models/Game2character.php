@@ -26,5 +26,17 @@ class Game2character extends \Illuminate\Database\Eloquent\Model
         return $res;
     }
 
+    /**
+     * Select character_id by game_id
+     * @param $game_id int the id of the game
+     * @return the id of all the characters of the corresponding game_id
+     */
+    public function selectGameByNumberChara($game_id) {
+        $res =  Game2character::query()->select('character_id')->where('game_id', '=', $game_id)->get();
+        return $res;
+    }
+
+
+
 
 }

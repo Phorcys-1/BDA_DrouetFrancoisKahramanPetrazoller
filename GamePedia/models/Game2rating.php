@@ -19,4 +19,14 @@ class Game2rating extends \Illuminate\Database\Eloquent\Model
         return $res;
     }
 
+    /**
+     * Select rating_id by game_id
+     * @param $id int the id of the game
+     * @return the rating_id of all the games corresponding to the gameID
+     */
+    public function selectIDInGame2($rating_id) {
+        $res =  Game2rating::query()->select('game_id')->where('rating_id', '=', $rating_id)->get();
+        return $res;
+    }
+
 }
