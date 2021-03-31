@@ -68,15 +68,6 @@ $res = new \gamepedia\models\Character();
 //q1
 //echo $ch->printCharacters($g2c->selectCharacter(12342));
 
-//q3
-//echo "Jeux de Sony : </br>";
-//echo $gd->printGames($c->selectByName("Sony"));
-
-
-
-
-
-
 //q2
 //echo 'Question 2, Séance 2 : Récupère les personnages dont le nom du jeu commence par Mario :<br></br>';
 
@@ -86,6 +77,10 @@ $res = new \gamepedia\models\Character();
 //foreach ($gameid->getIdByMario() as $value)
 //    echo $res->printCharactersName($iddeschara->selectCharacter($value['id']));
 //echo '<br>Fin de la requête... <br></br>';
+
+//q3
+//echo "Jeux de Sony : </br>";
+//echo $gd->printGames($c->selectByName("Sony"));
 
 /*
 //q4 variables
@@ -121,6 +116,7 @@ foreach ($lesjeux->getIdByMario() as $value) {
 echo '<br></br>Fin de la requête... <br></br>';
 */
 
+/*
 //Q6 variables
 $jeux = new \gamepedia\models\Game();
 $idrating = new \gamepedia\models\Game2rating();
@@ -128,6 +124,7 @@ $tmp = new \gamepedia\models\Game2rating();
 $idratingboard = new \gamepedia\models\Game_rating();
 $res = new \gamepedia\models\Game2rating();
 $r = new \gamepedia\models\Game();
+
 //Q6, Séance 2
 echo 'Question 6, Séance 2 : Récupère les jeux dont le nom commence par Mario ou le rating initial contient "3+" :<br></br>';
 
@@ -143,16 +140,61 @@ foreach ($jeux->getIdByMario() as $value) {
                 foreach ($res->selectIDInGame2($val['id']) as $va) {
                     echo $r->getJeuxByMario($va['game_id']);
                 }
-
             }
-
         }
-
     }
-
 }
 
 echo '<br></br>Fin de la requête... <br></br>';
+*/
+
+//Q7 variables
+$ljeux = new \gamepedia\models\Game();
+$ljeuxInc = new \gamepedia\models\Game_publishers();
+$lcomp = new \gamepedia\models\Company();
+$jeremonte = new \gamepedia\models\Game_publishers();
+
+$tmpq7 = new \gamepedia\models\Game_publishers();
+$tmpq72 = new \gamepedia\models\Company();
+//Q7
+echo 'Question 7, Séance 2 : Récupère les jeux dont le nom commence par Mario ou le rating initial contient "3+" et la compagnie contient "Inc" :<br></br>';
+
+echo 'Liste des ID des compagnies qui ont publié un jeu dont le nom commence par Mario et la compagnie contient INC : <br></br>';
+/*
+foreach ($ljeux->getIdByMario() as $value) {
+    $tmpq7 = $ljeuxInc->selectComp_idByGame_id($value['id']);
+    $len = $tmpq7 != null ? count($tmpq7) : 0;
+    if ($len) {
+        $ljeuxInc->selectComp_idByGame_id($value['id']);
+        foreach ($ljeuxInc->selectComp_idByGame_id($value['id']) as $val) {
+            $tmpq72 = $lcomp->selectIDByNAME($val['comp_id']);
+            $len2 = $tmpq72 != null ? count($tmpq72) : 0;
+            if($len2) {
+                echo $lcomp->selectIDByNAME($val['comp_id']);
+            }
+        }
+    }
+}
+*/
+foreach ($ljeux->getIdByMario() as $value) {
+    $tmpq7 = $ljeuxInc->selectComp_idByGame_id($value['id']);
+    $len = $tmpq7 != null ? count($tmpq7) : 0;
+    if ($len) {
+        $ljeuxInc->selectComp_idByGame_id($value['id']);
+        foreach ($ljeuxInc->selectComp_idByGame_id($value['id']) as $val) {
+            $tmpq72 = $lcomp->selectIDByNAME($val['comp_id']);
+            $len2 = $tmpq72 != null ? count($tmpq72) : 0;
+            if($len2) {
+                echo $lcomp->selectIDByNAME($val['comp_id']);
+            }
+        }
+    }
+}
+
+echo '<br></br>Fin de la requête... <br></br>';
+
+
+
 
 /*
 //q9
@@ -202,6 +244,7 @@ $c = new \gamepedia\models\Commentary("Very good", "this game is very good", dat
 echo $c::query()->get();
 //TODO Le modèle associé à la table des commentaires doit indiquer que les timestamps seront gérés. ????
 */
+/*
 echo "</br> Fin fichier  </br>";
 */
 
