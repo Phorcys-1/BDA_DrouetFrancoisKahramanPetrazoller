@@ -49,6 +49,11 @@ class Company extends \Illuminate\Database\Eloquent\Model
         return $res;
     }
 
+    public function ListCompagnyCountry($comp_name){
+        $res = Company::query()->select('location_country')->where('name','=',$comp_name)->get();
+        return $res;
+    }
+
 
 
 }

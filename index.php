@@ -252,6 +252,7 @@ echo $req1->listjeux();
 echo microtime();
 //0.03733400 a se connecter a la base
 //0.86492700 a executer la requête
+//0.491587 ms
 echo '<br>';
 */
 //2
@@ -266,6 +267,7 @@ echo '<br>';
 echo '<br>';
 //0.09201800
 //0.29329300
+// 0.201275 ms
 */
 //3
 /*
@@ -281,7 +283,8 @@ foreach ($gameid->getIdByMario() as $value)
 echo microtime();
 //0.06469600 a se connecter a la base
 //0.86029000 a executer la requête
-echo '<br>';
+//0.795594 ms
+
 */
 //4
 /*
@@ -309,11 +312,10 @@ foreach ($jeuxTD3->getIdByMario() as $value) {
     }
 }
 echo microtime();
-//0.06469600 a se connecter a la base
-//0.86029000 a executer la requête
 echo '<br>';
 //0.85721400
 //0.47867200
+//0.3786 ms
 */
 /**Index*/
 
@@ -325,12 +327,14 @@ echo microtime();
 */
 //0.91422700
 //0.11486800
+//0.8 ms
 /*
 echo microtime(). '<br>';
 $res = Game::query()->where('name', 'like', 'Land%')->get();
 echo microtime();
 //0.45636000
 //0.68407300
+//0.23 ms
 */
 /*
 echo microtime(). '<br>';
@@ -338,6 +342,7 @@ $res = Game::query()->where('name', 'like', 'The Real%')->get();
 echo microtime();
 //0.16123700
 //0.43677100
+//0.27 ms
 */
 
 //2
@@ -352,6 +357,7 @@ $res = Game::query()->where('name', 'like', 'Mario%')->get();
 echo microtime();
 //0.21289500
 //0.27190100
+//0.06 ms
 */
 /*
 echo microtime(). '<br>';
@@ -359,6 +365,7 @@ $res = Game::query()->where('name', 'like', 'Land%')->get();
 echo microtime();
 //0.70433900
 //0.75262000
+//0.05 ms
 */
 
 /*
@@ -367,6 +374,7 @@ $res = Game::query()->where('name', 'like', 'The Real%')->get();
 echo microtime();
 //0.55853200
 //0.57775800
+//0.02 ms
 */
 
 
@@ -377,6 +385,7 @@ $res = Game::query()->where('name', 'like', '%Mario%')->get();
 echo microtime();
 //0.48599000
 //0.74089200
+//0.26 ms
 */
 /*
 echo microtime(). '<br>';
@@ -384,6 +393,7 @@ $res = Game::query()->where('name', 'like', '%Land%')->get();
 echo microtime();
 //0.38924700
 //0.65760000
+//0.27 ms
 */
 /*
 echo microtime(). '<br>';
@@ -391,10 +401,25 @@ $res = Game::query()->where('name', 'like', '%The Real%')->get();
 echo microtime();
 //0.34494900
 //0.59351900
+//0.25 ms
 */
 
 
 // Plus de temps d'exécution car il doit approfondir ses recherches
+/*
+$rep = new \gamepedia\models\Company();
+echo microtime(). '<br>';
+echo $rep->ListCompagnyCountry("THQ");
+echo microtime();
+//0.79623100
+//0.82113600
+//0.025 ms
+*/
+//Le gain de performance avec l'index permet aux requêtes d'être dans l'intervalle [0.10;0.01] pour chaque requête
+
+/**Partie 2*/
+
+//1
 
 
 
