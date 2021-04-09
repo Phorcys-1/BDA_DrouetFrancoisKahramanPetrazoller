@@ -418,9 +418,27 @@ echo microtime();
 //Le gain de performance avec l'index permet aux requêtes d'être dans l'intervalle [0.10;0.01] pour chaque requête
 
 /**Partie 2*/
+DB::connection()->enableQueryLog();
 
 //1
+/**
+ *  les jeux dont le nom contient Mario
+ */
 
+//$res = Game::where('name', 'like', '%Mario%')->get();
+
+
+/*
+ * nom des persos du jeu 12342
+ */
+
+//foreach (Game::find(12342)->characters as $c)
+// echo "- perso : " . $c->name . "\n";
+
+
+/**
+ * affichage du log de requêtes
+ */
 
 
 /** séance 4 */

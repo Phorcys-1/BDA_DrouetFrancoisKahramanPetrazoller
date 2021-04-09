@@ -49,9 +49,4 @@ public function JeuxPaginer() {
      return Game::query()->get();
     }
 
-    //Seance 3 1)
-    public function listjeux(){
-        return Game::query()->get();
-    }
-
 }
