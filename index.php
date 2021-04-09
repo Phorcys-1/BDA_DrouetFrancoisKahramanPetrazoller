@@ -426,6 +426,7 @@ echo $c::query()->get();
 */
 
 //Partie 2 faker :
+echo 'Le code pour creer les tables User et commentary sont présent dans les classes php associé'."</br>";
 $faker = Faker\Factory::create();
 //utilisateur aleatoire
 $u = new \gamepedia\models\User($faker->email(), $faker->lastName(),
@@ -433,12 +434,22 @@ $u = new \gamepedia\models\User($faker->email(), $faker->lastName(),
     $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'));
 
 //commentaire aleatoire
+//On choisi un email d'utilisateur et un jeu aléatoire dans la base sur lequel le commentaire
+//va être associé
 $commEmail =\gamepedia\models\User::all()->random(1)[0]{"email"};
 $commGame = \gamepedia\models\Game::all()->random(1)[0]{"id"};
 $c = new \gamepedia\models\Commentary($faker->text(), $faker->text(),
     $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'),
     $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'),
     $commEmail, $commGame);
+
+//lister les commentaires de l'utilisateur jkoss@kirlin.info
+echo "</br>".$c::query()->where('posted_by', '=', 'jkoss@kirlin.info')->get();
+
+//lister les utilisateurs ayant posté + de 5 comm
+echo "</br>".$c::query()->having('posted_by', '>=', 5)->get();
+//echo "</br>".$c::query()->select('');
+
 
 echo "</br> Fin fichier  </br>";
 
