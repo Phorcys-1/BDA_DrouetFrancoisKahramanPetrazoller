@@ -241,6 +241,163 @@ echo( "</br>".\gamepedia\models\Game2genre::query()->where("genre_id", "=","51")
 */
 
 
+/** séance 3 */
+/** Partie 1 */
+/** Ressources */
+
+//1
+
+/* $req1  = new \gamepedia\models\Game();
+ * echo microtime() . "<br>";
+echo $req1->listjeux();
+echo microtime();
+//0.03733400 a se connecter a la base
+//0.86492700 a executer la requête
+echo '<br>';
+*/
+//2
+/*
+$req2 = new \gamepedia\models\Game();
+echo microtime() . "<br>";
+echo $req2->mario();
+echo microtime();
+//0.03733400 a se connecter a la base
+//0.86492700 a executer la requête
+echo '<br>';
+echo '<br>';
+//0.09201800
+//0.29329300
+*/
+//3
+/*
+$char = new \gamepedia\models\Character();
+$game = new \gamepedia\models\Game();
+$g2c = new \gamepedia\models\Game2character();
+echo microtime() . "<br>";
+foreach ($gameid->getIdByMario() as $value)
+     $res->printCharactersName($iddeschara->selectCharacter($value['id']));
+foreach ($gameid->getIdByMario() as $value)
+    echo "<br>";
+     $res->printCharactersName($iddeschara->selectCharacter($value['id']));
+echo microtime();
+//0.06469600 a se connecter a la base
+//0.86029000 a executer la requête
+echo '<br>';
+*/
+//4
+/*
+$jeuxTD3 = new \gamepedia\models\Game();
+$idratingTD3 = new \gamepedia\models\Game2rating();
+$tmpTD3 = new \gamepedia\models\Game2rating();
+$idratingboardTD3 = new \gamepedia\models\Game_rating();
+$resTD3 = new \gamepedia\models\Game2rating();
+$rTD3 = new \gamepedia\models\Game();
+echo microtime() . "<br>";
+foreach ($jeuxTD3->getIdByMario() as $value) {
+    $tmpTD3 = $idratingTD3->selectRatingID($value['id']);
+    $len = $tmpTD3 != null ? count($tmpTD3) : 0;
+    if($len) {
+        $idratingboardTD3->selectNameBy3plus($idratingTD3->selectRatingID($value['id']));
+        if(!empty($idratingboardTD3->selectNameBy3plus($idratingTD3->selectRatingID($value['id'])))){
+            foreach ($idratingboardTD3->selectNameBy3plus($idratingTD3->selectRatingID($value['id'])) as $val) {
+                $resTD3->selectIDInGame2($val['id']);
+                if(!empty($resTD3->selectIDInGame2($val['id'])))
+                    foreach ($resTD3->selectIDInGame2($val['id']) as $va) {
+                        $rTD3->getJeuxByMario($va['game_id']);
+                    }
+            }
+        }
+    }
+}
+echo microtime();
+//0.06469600 a se connecter a la base
+//0.86029000 a executer la requête
+echo '<br>';
+//0.85721400
+//0.47867200
+*/
+/**Index*/
+
+//1
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', 'Mario%')->get();
+echo microtime();
+*/
+//0.91422700
+//0.11486800
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', 'Land%')->get();
+echo microtime();
+//0.45636000
+//0.68407300
+*/
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', 'The Real%')->get();
+echo microtime();
+//0.16123700
+//0.43677100
+*/
+
+//2
+/*
+ * ALTER TABLE `game` ADD INDEX( `name`);
+ */
+
+//3
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', 'Mario%')->get();
+echo microtime();
+//0.21289500
+//0.27190100
+*/
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', 'Land%')->get();
+echo microtime();
+//0.70433900
+//0.75262000
+*/
+
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', 'The Real%')->get();
+echo microtime();
+//0.55853200
+//0.57775800
+*/
+
+
+
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', '%Mario%')->get();
+echo microtime();
+//0.48599000
+//0.74089200
+*/
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', '%Land%')->get();
+echo microtime();
+//0.38924700
+//0.65760000
+*/
+/*
+echo microtime(). '<br>';
+$res = Game::query()->where('name', 'like', '%The Real%')->get();
+echo microtime();
+//0.34494900
+//0.59351900
+*/
+
+
+// Plus de temps d'exécution car il doit approfondir ses recherches
+
+
 
 /** séance 4 */
 //q1
