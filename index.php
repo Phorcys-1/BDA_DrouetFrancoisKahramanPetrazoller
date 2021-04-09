@@ -35,7 +35,7 @@ $db->bootEloquent();
 print ("connecté a la base".'<br>');
 
 
-Eloquent::start(__DIR__ . '/gamepedia/conf/conf.ini.db');
+Eloquent::start(__DIR__.'/gamepedia/conf/conf.ini.dist');
 
 $g = new Game();
 $c = new \gamepedia\models\Company();
@@ -396,6 +396,8 @@ echo microtime();
 
 // Plus de temps d'exécution car il doit approfondir ses recherches
 
+
+
 /** séance 4 */
 //q1
 //TODO n° de tel incohérent parfois
@@ -423,6 +425,7 @@ echo $c::query()->get();
 */
 
 //Partie 2 faker :
+echo 'Le code pour creer les tables User et commentary sont présent dans les classes php associé'."</br>";
 $faker = Faker\Factory::create();
 //utilisateur aleatoire
 $u = new \gamepedia\models\User($faker->email(), $faker->lastName(),
@@ -430,12 +433,22 @@ $u = new \gamepedia\models\User($faker->email(), $faker->lastName(),
     $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'));
 
 //commentaire aleatoire
+//On choisi un email d'utilisateur et un jeu aléatoire dans la base sur lequel le commentaire
+//va être associé
 $commEmail =\gamepedia\models\User::all()->random(1)[0]{"email"};
 $commGame = \gamepedia\models\Game::all()->random(1)[0]{"id"};
 $c = new \gamepedia\models\Commentary($faker->text(), $faker->text(),
     $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'),
     $faker->dateTimeBetween('1900-01-01', '2010-12-31')->format('m/d/Y'),
     $commEmail, $commGame);
+
+//lister les commentaires de l'utilisateur jkoss@kirlin.info
+echo "</br>".$c::query()->where('posted_by', '=', 'jkoss@kirlin.info')->get();
+
+//lister les utilisateurs ayant posté + de 5 comm
+echo "</br>".$c::query()->having('posted_by', '>=', 5)->get();
+//echo "</br>".$c::query()->select('');
+
 
 echo "</br> Fin fichier  </br>";
 
